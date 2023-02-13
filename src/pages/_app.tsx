@@ -1,6 +1,6 @@
 import { type AppType } from "next/app";
 import { SessionProvider } from "next-auth/react";
-import { useRouter } from "next/router";
+import { NextIntlProvider } from 'next-intl';
 import { NextUIProvider } from '@nextui-org/react';
 
 import { api } from "../utils/api";
@@ -14,9 +14,11 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <NextUIProvider>
-        <Component {...pageProps} />
-      </NextUIProvider>
+      <NextIntlProvider messages={pageProps.messages}>
+        <NextUIProvider>
+          <Component {...pageProps} />
+        </NextUIProvider>
+      </NextIntlProvider>
     </SessionProvider>
   );
 };
