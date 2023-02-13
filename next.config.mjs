@@ -21,4 +21,5 @@ const config = {
     defaultLocale: "br",
   },
 };
+
 export default config;
