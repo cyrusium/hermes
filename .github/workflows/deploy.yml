@@ -1,8 +1,8 @@
 name: Deploy Next.js site to Pages
 
 on:
-  - push
-  - pull_request
+  push:
+    branches: ["main"]
 
 permissions: 
    contents: read 
@@ -79,7 +79,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
-    if: GITHUB_REF_NAME == 'main'
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
