@@ -1,3 +1,5 @@
+name: Deploy Next.js site to Pages
+
 on:
   - push
   - pull_request
@@ -12,7 +14,7 @@ concurrency:
    cancel-in-progress: true
 
 jobs:
-  cache-and-install:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -71,13 +73,14 @@ jobs:
         uses: actions/upload-pages-artifact@v1 
         with: 
           path: ./out
-    deploy: 
-      environment: 
-        name: github-pages 
-        url: ${{ steps.deployment.outputs.page_url }} 
-      runs-on: ubuntu-latest 
-      needs: build 
-      steps: 
-        - name: Deploy to GitHub Pages 
-          id: deployment 
-          uses: actions/deploy-pages@v1
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
