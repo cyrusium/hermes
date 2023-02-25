@@ -30,6 +30,6 @@
     "noPropertyAccessFromIndexSignature": true,
     "alwaysStrict": true,
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs", "locale/br_/messages.ts"],
   "exclude": ["node_modules"]
 }
