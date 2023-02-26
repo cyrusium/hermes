@@ -52,6 +52,6 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}- 
       - name: 'Create env file'
         run: |
-          echo "${{ secrets.ENV_FILE }}" > .env; ls -l
+          echo "${{ secrets.ENV_FILE }}" > .env; ls -la
       - name: Build with Next.js 
         run: pnpm exec next build 
