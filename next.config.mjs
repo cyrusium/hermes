@@ -51,7 +51,6 @@ const linguirc = {
   ]
 }
 
-// write to .test file
 fs.writeFileSync(".linguirc", JSON.stringify(linguirc, null, 2));
 
 export default config;
