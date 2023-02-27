@@ -19,7 +19,6 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   const router = useRouter();
   useEffect(() => {
-    // Activate the default locale on page load
     void activate(router.locale ?? "en");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
