@@ -22,6 +22,14 @@ const server = z.object({
   // Add `.min(1) on ID and SECRET if you want to make sure they're not empty
   DISCORD_CLIENT_ID: z.string(),
   DISCORD_CLIENT_SECRET: z.string(),
+  GITHUB_CLIENT_ID: z.string(),
+  GITHUB_CLIENT_SECRET: z.string(),
+  GOOGLE_CLIENT_ID: z.string(),
+  GOOGLE_CLIENT_SECRET: z.string(),
+  FACEBOOK_CLIENT_ID: z.string(),
+  FACEBOOK_CLIENT_SECRET: z.string(),
+  EMAIL_SERVER: z.string().url(),
+  EMAIL_FROM: z.string().email()
 });
 
 /**
@@ -45,6 +53,14 @@ const processEnv = {
   NEXTAUTH_URL: process.env.NEXTAUTH_URL,
   DISCORD_CLIENT_ID: process.env["DISCORD_CLIENT_ID"],
   DISCORD_CLIENT_SECRET: process.env["DISCORD_CLIENT_SECRET"],
+  GITHUB_CLIENT_ID: process.env["GITHUB_CLIENT_ID"],
+  GITHUB_CLIENT_SECRET: process.env["GITHUB_CLIENT_SECRET"],
+  GOOGLE_CLIENT_ID: process.env["GOOGLE_CLIENT_ID"],
+  GOOGLE_CLIENT_SECRET: process.env["GOOGLE_CLIENT_SECRET"],
+  FACEBOOK_CLIENT_ID: process.env["FACEBOOK_CLIENT_ID"],
+  FACEBOOK_CLIENT_SECRET: process.env["FACEBOOK_CLIENT_SECRET"],
+  EMAIL_SERVER: process.env["EMAIL_SERVER"],
+  EMAIL_FROM: process.env["EMAIL_FROM"]
   // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
 };
 
