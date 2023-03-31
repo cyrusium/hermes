@@ -12,6 +12,7 @@ import "../styles/globals.css";
 import type { Session } from "next-auth";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import Header from "../components/Header";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -27,7 +28,12 @@ const MyApp: AppType<{ session: Session | null }> = ({
     <SessionProvider session={session}>
       <I18nProvider i18n={i18n}>
         <NextUIProvider>
-          <Component {...pageProps} />
+          <header className='fixed top-8 max-sm:top-4 z-[999] flex w-full max-w-screen-2xl left-2/4 -translate-x-2/4 flex-wrap px-4'>
+            <Header active={2}/>
+          </header>
+          <main>
+            <Component {...pageProps} />
+          </main>
         </NextUIProvider>
       </I18nProvider>
     </SessionProvider>

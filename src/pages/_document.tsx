@@ -16,7 +16,7 @@ class MyDocument extends Document {
 
   override render() {
     return (
-      <Html lang="en">
+      <Html lang="en" className="dark">
         <Head>{CssBaseline.flush()}</Head>
         <body>
           <Main />
