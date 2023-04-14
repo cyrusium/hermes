@@ -5,6 +5,7 @@ import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import pages from '../../pages'
 
 export interface HeaderProps {
   active: number
@@ -18,13 +19,17 @@ interface MenuItems {
   active: HeaderProps['active'],
   className?: string
 }
-const Items: MenuItems['items'] = [
-  { href: '/', label: 'Home'},
-  { href: '/resumes', label: 'Resumos'},
-  { href: '/shop', label: 'Shopping'},
-  { href: '/curriculum', label: 'Currículo'},
-  //{ href: '/dev', label: 'Dev'},
-]
+
+const Items: MenuItems['items'] = pages.map((config) => {
+  if (config.showInHeader == false) {
+    return null;
+  }
+
+  return {
+    href: config.link,
+    label: config.title
+  }
+}).filter((p) => p !== null) as MenuItems["items"]
 
 function DropdownMenu(props: MenuItems) {
   return (

@@ -19,6 +19,7 @@
   "rules": {
     "@typescript-eslint/consistent-type-imports": "off",
     "import/no-anonymous-default-export": "off",
-    "@typescript-eslint/no-non-null-assertion": "off"
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": "off"
   }
 }

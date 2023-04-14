@@ -1,39 +1,46 @@
 import Head from "next/head";
 import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
+import { I18nContext } from "../../locales/i18n-react"
 
 import { api } from "../utils/api";
-import { t } from "@lingui/macro";
+
+const description = "Hermes is a open source bus routing website and application. Select a destination and find the quickest way to get to it, for free, for everyone"
+const img_link = "https://herm.es/og.png"
+const url = "https://herm.es/"
+const meta_title = "Hermes - Powerfull bus routing website/app"
 
 const Home = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
   return (
     <>
       <Head>
-        <title>Create T3 App</title>
-        <meta name="title" content="Hermes - Powerfull bus routing website/app"/>
-        <meta name="description" content="Hermes is a open source bus routing website and application. Select a destination and find the quickest way to get to it, for free, for everyone"/>
+        <title>Hermes</title>
+        <meta name="title" content={meta_title}/>
+        <meta name="description" content={description}/>
 
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://metatags.io/"/>
-        <meta property="og:title" content="Hermes - Powerfull bus routing website/app"/>
-        <meta property="og:description" content="Hermes is a open source bus routing website and application. Select a destination and find the quickest way to get to it, for free, for everyone"/>
-        <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"/>
+        <meta property="og:url" content={url}/>
+        <meta property="og:title" content={meta_title}/>
+        <meta property="og:description" content={description}/>
+        <meta property="og:image" content={img_link}/>
 
         <meta property="twitter:card" content="summary_large_image"/>
-        <meta property="twitter:url" content="https://metatags.io/"/>
-        <meta property="twitter:title" content="Hermes - Powerfull bus routing website/app"/>
-        <meta property="twitter:description" content="Hermes is a open source bus routing website and application. Select a destination and find the quickest way to get to it, for free, for everyone"/>
-        <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"/>
+        <meta property="twitter:url" content={url}/>
+        <meta property="twitter:title" content={meta_title}/>
+        <meta property="twitter:description" content={description}/>
+        <meta property="twitter:image" content={img_link}/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem] text-center">
-            {t`title`}<br/><span className="text-[hsl(280,100%,70%)]">{t`project_name`}</span>
+            {`title`}<br/><span className="text-[hsl(280,100%,70%)]">{`project_name`}</span>
           </h1>
           <h2 className="text-xl font-bold tracking-tight text-white sm:text-[3rem] text-center">
-            { t`description` } </h2>
+            { `description` }
+            <I18nContext.Consumer></I18nContext.Consumer>
+          </h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
             <Link
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
