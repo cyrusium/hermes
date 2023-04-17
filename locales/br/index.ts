@@ -7,6 +7,7 @@ const messages: BaseTranslation = {
   header: {
     home: "Início",
     routes: "Rotas",
+    register: "Registre-se"
   }
 }
 

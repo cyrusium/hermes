@@ -5,8 +5,9 @@ const messages: Translation = {
   project_name: "Hermes",
   description: "The next-gen bus routing app",
   header: {
-    home: "Início",
-    routes: "Rotas",
+    home: "Home",
+    routes: "Routes",
+    register: "Login"
   }
 }
 

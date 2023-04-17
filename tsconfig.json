@@ -29,6 +29,13 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "alwaysStrict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@styles/*": ["src/styles/*"],
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"],
+      "@locale/*": ["locales/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs", "locale2/br_/messages.ts"],
   "exclude": ["node_modules"]

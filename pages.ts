@@ -1,12 +1,11 @@
 declare interface PageConfig {
-  title: string;
-  showInHeader: boolean;
+  key: string;
   link: string
 }
 
 const pages: PageConfig[] = [
-  { title: 'header.home', showInHeader: true, link: '/' },
-  { title: 'Rotas', showInHeader: true, link: '/' },
+  { key: 'home',  link: '/' },
+  { key: 'routes', link: '/' },
 ] 
 
 export default pages;

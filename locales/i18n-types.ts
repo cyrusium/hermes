@@ -35,6 +35,10 @@ type RootTranslation = {
 		 * R​o​t​a​s
 		 */
 		routes: string
+		/**
+		 * R​e​g​i​s​t​r​e​-​s​e
+		 */
+		register: string
 	}
 }
 
@@ -60,6 +64,10 @@ export type TranslationFunctions = {
 		 * Rotas
 		 */
 		routes: () => LocalizedString
+		/**
+		 * Registre-se
+		 */
+		register: () => LocalizedString
 	}
 }
 
