@@ -64,7 +64,7 @@ jobs:
           restore-keys: | 
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}- 
       - name: Build with Next.js 
-        run: pnpm doppler build 
+        run: pnpm build 
       - name: Static HTML export with Next.js 
         run: pnpm exec next export 
       - name: Upload artifact 
