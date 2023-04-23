@@ -1,0 +1,16 @@
+{
+  "tailwind-fold.autoFold": false,
+  "tailwind-fold.foldStyle": "QUOTES",
+  "tailwind-fold.unfoldedTextOpacity": 0.5,
+  "tailwindCSS.emmetCompletions": true,
+  "files.autoSave": "onFocusChange",
+  "editor.fontLigatures": true,
+  "editor.stickyScroll.maxLineCount": 10,
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.defaultModel": "indentationModel",
+  "editor.tabSize": 2,
+  "editor.fontFamily": "'Cascadia Code', 'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+}

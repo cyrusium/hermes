@@ -8,7 +8,8 @@
     "postinstall": "prisma generate",
     "lint": "next lint",
     "start": "next start",
-    "typesafe-i18n": "typesafe-i18n"
+    "typesafe-i18n": "typesafe-i18n",
+    "doppler": "doppler run pnpm"
   },
   "dependencies": {
     "@aws-sdk/client-ses": "^3.312.0",
