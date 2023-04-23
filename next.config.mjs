@@ -9,9 +9,9 @@ import fs from "fs";
 
 /** @type {string[]} */
 const locales = fs
-  .readdirSync("./locale")
+  .readdirSync("./locales")
   .filter((f) => fs
-    .statSync(`./locale/${f}`)
+    .statSync(`./locales/${f}`)
     .isDirectory()
   );
 
@@ -37,20 +37,5 @@ const config = {
   //   forceSwcTransforms: true,
   // },
 };
-
-
-const linguirc = {
-  locales,
-  sourceLocale: defaultLocale,
-  catalogs: [
-    {
-      path: "<rootDir>/locale/{locale}/messages",
-      include: ["<rootDir>/"],
-      exclude: ["**/node_modules/**"]
-    }
-  ]
-}
-
-fs.writeFileSync(".linguirc", JSON.stringify(linguirc, null, 2));
 
 export default config;

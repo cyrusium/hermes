@@ -5,6 +5,13 @@ import {
   type DefaultSession,
 } from "next-auth";
 import DiscordProvider from "next-auth/providers/discord";
+import GoogleProvider from 'next-auth/providers/google'
+// import EmailProvider from 'next-auth/providers/email'
+import GithubProvider from 'next-auth/providers/github'
+import FacebookProvider from 'next-auth/providers/facebook'
+// import { createTransport } from 'nodemailer'
+// import { defaultProvider } from '@aws-sdk/credential-provider-node'
+// import aws from '@aws-sdk/client-ses'
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import { env } from "../env.mjs";
 import { prisma } from "./db";
@@ -31,6 +38,17 @@ declare module "next-auth" {
   // }
 }
 
+// const ses = new aws.SES({
+//   apiVersion: "2010-12-01",
+//   region: "sa-east-1",
+//   defaultProvider,
+  
+// });
+
+// const transport = createTransport({
+//   SES: { ses, aws }
+// })
+
 /**
  * Options for NextAuth.js used to configure adapters, providers, callbacks,
  * etc.
@@ -53,6 +71,28 @@ export const authOptions: NextAuthOptions = {
       clientId: env.DISCORD_CLIENT_ID,
       clientSecret: env.DISCORD_CLIENT_SECRET,
     }),
+    GithubProvider({
+      clientId: env.GITHUB_CLIENT_ID,
+      clientSecret: env.GITHUB_CLIENT_SECRET
+    }),
+    // EmailProvider({
+    //   server: env.EMAIL_SERVER,
+    //   from: env.EMAIL_FROM,
+    //   async sendVerificationRequest({ identifier, provider, url, theme }) {
+    //     const { host } = new URL(url);
+    //     const result = await transport.sendMail({
+    //       to: identifier,
+    //       from: provider.from,
+    //       subject: `Sign in to ${host}`,
+    //       text: `Sign in to ${host}\n${url}\n\n`,
+    //       html: `Sign in to ${host}\n${url}\n\n`,
+    //     })
+    //     const failed = result.rejected.concat(result.pending).filter(Boolean)
+    //     if (failed.length) {
+    //       throw new Error(`Email(s) (${failed.join(", ")}) could not be sent`)
+    //     }
+    //   },
+    // }),
     /**
      * ...add more providers here
      *

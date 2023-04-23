@@ -1,0 +1,22 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-typescript-next",
+    "formulahendry.auto-rename-tag",
+    "wallabyjs.console-ninja",
+    "cschlosser.doxdocgen",
+    "usernamehw.errorlens",
+    "github.copilot",
+    "github.copilot-labs",
+    "eamodio.gitlens",
+    "oderwat.indent-rainbow",
+    "visualstudioexptteam.vscodeintellicode",
+    "zignd.html-css-class-completion",
+    "esbenp.prettier-vscode",
+    "prisma.prisma",
+    "yoavbls.pretty-ts-errors",
+    "albert.tabout",
+    "bradlc.vscode-tailwindcss",
+    "alfredbirk.tailwind-documentation",
+    "stivo.tailwind-fold"
+  ]
+}
