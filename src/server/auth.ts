@@ -38,17 +38,6 @@ declare module "next-auth" {
   // }
 }
 
-// const ses = new aws.SES({
-//   apiVersion: "2010-12-01",
-//   region: "sa-east-1",
-//   defaultProvider,
-  
-// });
-
-// const transport = createTransport({
-//   SES: { ses, aws }
-// })
-
 /**
  * Options for NextAuth.js used to configure adapters, providers, callbacks,
  * etc.
@@ -67,6 +56,14 @@ export const authOptions: NextAuthOptions = {
   },
   adapter: PrismaAdapter(prisma),
   providers: [
+    GoogleProvider({
+      clientId: env.GOOGLE_CLIENT_ID,
+      clientSecret: env.GOOGLE_CLIENT_SECRET
+    }),
+    FacebookProvider({
+      clientId: env.FACEBOOK_CLIENT_ID,
+      clientSecret: env.FACEBOOK_CLIENT_SECRET
+    }),
     DiscordProvider({
       clientId: env.DISCORD_CLIENT_ID,
       clientSecret: env.DISCORD_CLIENT_SECRET,
