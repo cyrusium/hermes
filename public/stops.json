@@ -1,0 +1,606 @@
+[
+  {
+    "id": 6514,
+    "name": "Alpes Residencial"
+  },
+  {
+    "id": 4572,
+    "name": "Angelo Fattori"
+  },
+  {
+    "id": 50,
+    "name": "Aparecidinha (Pto. Final &#8211; Rot\u00e1toria)"
+  },
+  {
+    "id": 254,
+    "name": "Arizona"
+  },
+  {
+    "id": 1136,
+    "name": "Atibainha"
+  },
+  {
+    "id": 140,
+    "name": "Av Lacerda Franco"
+  },
+  {
+    "id": 695,
+    "name": "Av Nossa Senhora das Gra\u00e7as"
+  },
+  {
+    "id": 1057,
+    "name": "Av. 29 de Abril"
+  },
+  {
+    "id": 234,
+    "name": "Av. Campinas"
+  },
+  {
+    "id": 131,
+    "name": "Av. Expedicion\u00e1rios"
+  },
+  {
+    "id": 65,
+    "name": "Av. Marechal Deodoro"
+  },
+  {
+    "id": 64,
+    "name": "Av. Pedro Mascagni"
+  },
+  {
+    "id": 144,
+    "name": "Av. Prudente de Moraes"
+  },
+  {
+    "id": 7754,
+    "name": "Av. Senador Paulo"
+  },
+  {
+    "id": 222,
+    "name": "Av. Urbano Bezana &#8211; Centro Comunit\u00e1rio"
+  },
+  {
+    "id": 281,
+    "name": "Av. Vicente Catalani"
+  },
+  {
+    "id": 214,
+    "name": "Bairro da Ponte"
+  },
+  {
+    "id": 561,
+    "name": "Bairro do Engenho"
+  },
+  {
+    "id": 741,
+    "name": "Bairro do Porto"
+  },
+  {
+    "id": 912,
+    "name": "Bairro dos Pires"
+  },
+  {
+    "id": 348,
+    "name": "Beija Flor"
+  },
+  {
+    "id": 616,
+    "name": "Caminho do Sol"
+  },
+  {
+    "id": 913,
+    "name": "Capela do Barreiro"
+  },
+  {
+    "id": 132,
+    "name": "Centen\u00e1rio"
+  },
+  {
+    "id": 253,
+    "name": "Central Park 01"
+  },
+  {
+    "id": 923,
+    "name": "Central Park 02"
+  },
+  {
+    "id": 10774,
+    "name": "Chambala"
+  },
+  {
+    "id": 907,
+    "name": "Chamonix"
+  },
+  {
+    "id": 10783,
+    "name": "Chavine"
+  },
+  {
+    "id": 11312,
+    "name": "Clube &#8211; Alagado"
+  },
+  {
+    "id": 8141,
+    "name": "Clube de Campo"
+  },
+  {
+    "id": 555,
+    "name": "Clube de Campo &#8211; Portaria"
+  },
+  {
+    "id": 956,
+    "name": "Cond 7 Lagos"
+  },
+  {
+    "id": 1150,
+    "name": "Cond Paineiras"
+  },
+  {
+    "id": 10776,
+    "name": "Condom\u00ednio Ecologie"
+  },
+  {
+    "id": 8082,
+    "name": "Creche Jo\u00e3o de Barro"
+  },
+  {
+    "id": 146,
+    "name": "Cruzeiro"
+  },
+  {
+    "id": 7756,
+    "name": "C\u00e2mara Municipal"
+  },
+  {
+    "id": 145,
+    "name": "Delforno"
+  },
+  {
+    "id": 66,
+    "name": "Distrito Industrial Alfredo Rela"
+  },
+  {
+    "id": 1753,
+    "name": "Domingos Preti"
+  },
+  {
+    "id": 153,
+    "name": "Dr. Pimenta"
+  },
+  {
+    "id": 123,
+    "name": "E. Chrispim"
+  },
+  {
+    "id": 7921,
+    "name": "Encosta do Sol"
+  },
+  {
+    "id": 639,
+    "name": "Engenho D\u00b4\u00c1gua"
+  },
+  {
+    "id": 906,
+    "name": "Escola"
+  },
+  {
+    "id": 8090,
+    "name": "Escola Angela L\u00edgia"
+  },
+  {
+    "id": 8108,
+    "name": "Escola Anna Abreu"
+  },
+  {
+    "id": 7933,
+    "name": "Escola Bas\u00edlio"
+  },
+  {
+    "id": 8110,
+    "name": "Escola Dutra"
+  },
+  {
+    "id": 7913,
+    "name": "Escola Eliete"
+  },
+  {
+    "id": 7919,
+    "name": "Escola Mara Cabral"
+  },
+  {
+    "id": 8145,
+    "name": "Escola Maria Salles"
+  },
+  {
+    "id": 7912,
+    "name": "Escola Nazareth"
+  },
+  {
+    "id": 8131,
+    "name": "Escola Seb. Camargo Pires"
+  },
+  {
+    "id": 8123,
+    "name": "Escola Tomazini"
+  },
+  {
+    "id": 8116,
+    "name": "Escola Vera L\u00facia"
+  },
+  {
+    "id": 139,
+    "name": "Esplanada"
+  },
+  {
+    "id": 70,
+    "name": "Extra"
+  },
+  {
+    "id": 7971,
+    "name": "FLEX Atacadista"
+  },
+  {
+    "id": 7920,
+    "name": "Fazenda Alagado"
+  },
+  {
+    "id": 10922,
+    "name": "Fazenda Cachoeira"
+  },
+  {
+    "id": 8078,
+    "name": "Fazenda Paineiras"
+  },
+  {
+    "id": 127,
+    "name": "F\u00e1tima"
+  },
+  {
+    "id": 2541,
+    "name": "Gin\u00e1sio de Esportes"
+  },
+  {
+    "id": 8083,
+    "name": "Granja Alvorada"
+  },
+  {
+    "id": 10568,
+    "name": "Haras Cristal"
+  },
+  {
+    "id": 474,
+    "name": "Harmonia"
+  },
+  {
+    "id": 569,
+    "name": "Horizonte Azul"
+  },
+  {
+    "id": 349,
+    "name": "Hospital Itatiba"
+  },
+  {
+    "id": 10673,
+    "name": "Itatiba Esporte Clube"
+  },
+  {
+    "id": 704,
+    "name": "Itatiba Mall"
+  },
+  {
+    "id": 223,
+    "name": "Itatiba Park"
+  },
+  {
+    "id": 11263,
+    "name": "Jardim M\u00e9xico"
+  },
+  {
+    "id": 378,
+    "name": "Jd Ester"
+  },
+  {
+    "id": 1090,
+    "name": "Jd Nova Esperan\u00e7a"
+  },
+  {
+    "id": 917,
+    "name": "Jd Salessi"
+  },
+  {
+    "id": 930,
+    "name": "Jd dos Lagos"
+  },
+  {
+    "id": 251,
+    "name": "Jd. Galetto"
+  },
+  {
+    "id": 902,
+    "name": "Jd. Ip\u00ea"
+  },
+  {
+    "id": 638,
+    "name": "Jd. Leonor"
+  },
+  {
+    "id": 115,
+    "name": "Jd. Virginia"
+  },
+  {
+    "id": 559,
+    "name": "Jd. Vitoria"
+  },
+  {
+    "id": 4119,
+    "name": "Kromberg"
+  },
+  {
+    "id": 120,
+    "name": "Linhasita"
+  },
+  {
+    "id": 236,
+    "name": "Luvison"
+  },
+  {
+    "id": 2656,
+    "name": "Marginal Bombeiros"
+  },
+  {
+    "id": 69,
+    "name": "Marginal Mercad\u00e3o"
+  },
+  {
+    "id": 147,
+    "name": "Marginal Paladino"
+  },
+  {
+    "id": 10005,
+    "name": "Moenda"
+  },
+  {
+    "id": 8136,
+    "name": "Moenda 1"
+  },
+  {
+    "id": 282,
+    "name": "Mombuca"
+  },
+  {
+    "id": 939,
+    "name": "Morada dos P\u00e1ssaros"
+  },
+  {
+    "id": 984,
+    "name": "Morro Azul"
+  },
+  {
+    "id": 477,
+    "name": "Na\u00e7\u00f5es"
+  },
+  {
+    "id": 933,
+    "name": "Nova Sui\u00e7a"
+  },
+  {
+    "id": 143,
+    "name": "Novo Horizonte"
+  },
+  {
+    "id": 148,
+    "name": "Pabreu Mall"
+  },
+  {
+    "id": 60,
+    "name": "Para\u00edso"
+  },
+  {
+    "id": 150,
+    "name": "Parque Industrial"
+  },
+  {
+    "id": 294,
+    "name": "Pedro Costa"
+  },
+  {
+    "id": 61,
+    "name": "Pedro Fumachi"
+  },
+  {
+    "id": 8140,
+    "name": "Pico Alto"
+  },
+  {
+    "id": 614,
+    "name": "Pinheirinho (Cooperativa)"
+  },
+  {
+    "id": 7922,
+    "name": "Pista"
+  },
+  {
+    "id": 10935,
+    "name": "Ponte Nova"
+  },
+  {
+    "id": 978,
+    "name": "Portal de Ita"
+  },
+  {
+    "id": 186,
+    "name": "Porto Seguro"
+  },
+  {
+    "id": 10573,
+    "name": "Posto Moenda"
+  },
+  {
+    "id": 51,
+    "name": "Pq da Colina"
+  },
+  {
+    "id": 976,
+    "name": "Prefeitura"
+  },
+  {
+    "id": 10775,
+    "name": "Rancho Coyote"
+  },
+  {
+    "id": 987,
+    "name": "Real Parque"
+  },
+  {
+    "id": 929,
+    "name": "Recanto dos P\u00e1ssaros"
+  },
+  {
+    "id": 134,
+    "name": "Rei de Ouro"
+  },
+  {
+    "id": 7702,
+    "name": "Reserva Santa Rosa"
+  },
+  {
+    "id": 992,
+    "name": "Rio Abaixo"
+  },
+  {
+    "id": 10006,
+    "name": "Rodovia Alkindar M. Junqueira"
+  },
+  {
+    "id": 7926,
+    "name": "Rodovia Const\u00e2ncio Cintra"
+  },
+  {
+    "id": 6088,
+    "name": "Rodovia D. Pedro I"
+  },
+  {
+    "id": 973,
+    "name": "Rodovia Itatiba Bragan\u00e7a"
+  },
+  {
+    "id": 10778,
+    "name": "Rodovia Romildo Prado"
+  },
+  {
+    "id": 55,
+    "name": "Rodovi\u00e1ria"
+  },
+  {
+    "id": 7185,
+    "name": "Rua Luis Scavone"
+  },
+  {
+    "id": 133,
+    "name": "Rua Sto Antonio"
+  },
+  {
+    "id": 306,
+    "name": "SUS"
+  },
+  {
+    "id": 3956,
+    "name": "San Francisco"
+  },
+  {
+    "id": 1030,
+    "name": "San Martin"
+  },
+  {
+    "id": 227,
+    "name": "Santa Casa"
+  },
+  {
+    "id": 4125,
+    "name": "Santa Cruz"
+  },
+  {
+    "id": 8085,
+    "name": "Santa Julia"
+  },
+  {
+    "id": 6182,
+    "name": "Santo Antonio"
+  },
+  {
+    "id": 8126,
+    "name": "Sitio Bonanza"
+  },
+  {
+    "id": 8677,
+    "name": "Sitio Rigolo"
+  },
+  {
+    "id": 8122,
+    "name": "Sitio do Fumachi"
+  },
+  {
+    "id": 8138,
+    "name": "S\u00e3o Marcelo"
+  },
+  {
+    "id": 1164,
+    "name": "Tapera Grande"
+  },
+  {
+    "id": 52,
+    "name": "Terminal Quintino"
+  },
+  {
+    "id": 53,
+    "name": "Terminal Comendador"
+  },
+  {
+    "id": 137,
+    "name": "Terra Nova"
+  },
+  {
+    "id": 554,
+    "name": "Terras de S\u00e3o Sebasti\u00e3o"
+  },
+  {
+    "id": 8135,
+    "name": "Trevo Baroneza"
+  },
+  {
+    "id": 7925,
+    "name": "Trevo Louveira"
+  },
+  {
+    "id": 151,
+    "name": "UPA"
+  },
+  {
+    "id": 10007,
+    "name": "Vila Brasileira"
+  },
+  {
+    "id": 135,
+    "name": "Vila Jarussi"
+  },
+  {
+    "id": 141,
+    "name": "Vila Real"
+  },
+  {
+    "id": 7820,
+    "name": "Village das Palmeiras"
+  },
+  {
+    "id": 2080,
+    "name": "Villagio Fosuzzi"
+  },
+  {
+    "id": 1089,
+    "name": "Vista Linda"
+  },
+  {
+    "id": 126,
+    "name": "Zupardo"
+  }
+]
