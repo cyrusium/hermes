@@ -28,6 +28,20 @@ export function PinDrop(props: SVGAttributes<SVGSVGElement>) {
   )
 }
 
+export function Exit(props: SVGAttributes<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="48"
+      viewBox="0 -960 960 960"
+      width="48"
+      {...props}
+    >
+      <path d="m249-186-63-63 231-231-231-230 63-64 231 230 231-230 63 64-230 230 230 231-63 63-231-230-231 230Z" />
+    </svg>
+  )
+}
+
 export function __unamed(props: SVGAttributes<SVGSVGElement>) {
   return (
     <svg

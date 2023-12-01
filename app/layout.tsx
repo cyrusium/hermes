@@ -1,6 +1,7 @@
-import '@globalcss'
+import './globals.css'
 import { Inter, Montserrat } from 'next/font/google'
 import Link from 'next/link'
+import DarkMode from '@components/darkmode'
 
 const montserrat = Montserrat({ subsets: ['latin'], preload: true, weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
 const inter = Inter({ subsets: ['latin'], preload: true, weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
@@ -18,14 +19,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className=''>
-      <body className={`h-screen w-screen`}>
+    <html lang="en" className='dark'>
+      <body className={`h-screen w-screen dark:bg-background/dark`}>
         <noscript className='w-screen h-screen fixed flex items-center backdrop-blur-xl z-[999] select-none'>
           <div className="flex flex-col items-center w-full">
-            <h1 className={`${montserrat.className} text-4xl font-black text-center w-full text-slate-100`}>
+            <h1 className={`${montserrat.className} text-4xl font-black text-center w-full dark:text-slate-100`}>
               Esta página necessita de <wbr />JavaScript para funcionar
             </h1>
-            <p className={`${inter.className} font-extrabold text-2xl text-slate-100`}>Aprenda como ativar <a
+            <p className={`${inter.className} font-extrabold text-2xl dark:text-slate-100`}>Aprenda como ativar <a
               href="https://support.google.com/adsense/answer/12654?hl=pt-BR"
               className={`${inter.className} text-cyan-400 font-black hover:underline`}
               style={{ textDecorationThickness: '.1rem' }}
@@ -39,22 +40,23 @@ export default function RootLayout({
             maskImage: mask,
             WebkitMaskImage: mask,
           }} />
-          <div className={`${montserrat.className} flex flex-row items-center`}>
-            <span className={`font-black max-md:text-xl md:text-4xl`}>Hermes</span>
-            <span className={`max-md:text-[0.65rem] md:text-sm font-black md:translate-y-0.5 px-2 p-0.5 rounded-xl max-md:ml-1 md:ml-3 bg-gradient-to-r from-fuchsia-600 to-violet-600`}>ALPHA</span>
-          </div>
+          <Link className={`${montserrat.className} flex flex-row items-center`} href="/">
+            <span className={`font-black dark:text-white max-md:text-xl md:text-4xl`}>Hermes</span>
+            <span className={`max-md:text-[0.65rem] md:text-sm font-black md:translate-y-0.5 px-2 p-0.5 rounded-xl max-md:ml-1 md:ml-3 bg-gradient-to-br from-fuchsia-600 via-fuchsia-700 to-violet-600 text-white`}>ALPHA</span>
+          </Link>
           <div className='inline-flex justify-evenly w-full'>
             <Link
-              href='/search'
-              className='font-bold text-slate-300 hover:underline underline-offset-4'
+              href='/routes'
+              className='font-bold dark:text-slate-300 hover:underline underline-offset-4'
               style={{ textDecorationThickness: '.1rem' }}
               draggable={false}
-            >Search</Link>
+            >Rotas</Link>
           </div>
-          <div>
+          <div className="flex flex-row items-center justify-around">
+            <DarkMode />
             <Link
               href='/login'
-              className='font-bold text-slate-300 max-md:mr-4 hover:underline underline-offset-4'
+              className='font-bold dark:text-slate-300 max-md:mr-4 hover:underline underline-offset-4'
               style={{ textDecorationThickness: '.1rem' }}
               draggable={false}
             >Login</Link>

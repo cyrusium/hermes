@@ -42,7 +42,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col items-center justify-between pt-24 ">
       <div className="flex items-center flex-col gap-8 2xl:mt-28">
         <div className={`${montserrat.className} flex items-center flex-col gap-8 2xl:mt-28`}>
-          <h1 className={`max-md:text-3xl md:text-6xl font-black text-center w-full mb-2`}>
+          <h1 className={`max-md:text-3xl md:text-6xl font-black text-center w-full mb-2 dark:text-white`}>
             Vá de{" "}
             <span className="bg-gradient-to-r from-cyan-500 to-lime-500 bg-clip-text text-transparent">
               {from || "qualquer lugar"}
@@ -50,20 +50,21 @@ export default function Home() {
             {" "}para{" "}
             <span className='bg-gradient-to-r from-cyan-500 to-lime-500 bg-clip-text text-transparent stroke-black stoke-2'>
               {to || "qualquer lugar"}
-            </span>
+            </span><br />
+            com Hermes
           </h1>
         </div>
-        <form action="" className='flex max-md:flex-col md:flex-row md:items-center max-md:items-start max-md:mt-12 md:mt-24'>
+        <form action="" className='flex max-md:flex-col md:flex-row md:items-center max-md:items-start max-md:mt-12 md:mt-24 dark:text-white'>
           <div className='flex fex-row'>
             <MyLocation className="p-2 fill-white" />
-            <input type="search" list="stops" name="from" placeholder='Origem' className='bg-opacity-20 bg-slate-400 pr-24 pl-6 py-3 rounded-md border-none backdrop-blur-xl text-white placeholder-slate-200 placeholder:font-extrabold font-bold' ref={fromRef} onChange={handle_from} />
+            <input type="search" list="stops" name="from" placeholder='Origem' className='bg-opacity-20 bg-slate-400 pr-24 pl-6 py-3 rounded-md border-none backdrop-blur-xl placeholder-slate-200 placeholder:font-extrabold font-bold' ref={fromRef} onChange={handle_from} />
           </div>
           <span className="text-4xl font-black max-md:-translate-y-5 max-md:ml-5 max-md:h-4 md:ml-3 md:-translate-y-2 select-none">.</span>
           <span className="text-4xl font-black max-md:-translate-y-5 max-md:ml-5 max-md:h-4 md:mx-2 md:-translate-y-2 select-none">.</span>
           <span className="text-4xl font-black max-md:-translate-y-5 max-md:ml-5 max-md:h-4 md:-translate-y-2 select-none">.</span>
           <div className='flex fex-row'>
             <PinDrop className="p-1 fill-white" />
-            <input type="search" list="stops" name="to" placeholder='Destino' className='bg-opacity-20 bg-slate-400 pr-24 pl-6 py-3 rounded-md border-none backdrop-blur-xl text-white placeholder-slate-200 placeholder:font-extrabold font-bold' ref={toRef} onChange={handle_to} />
+            <input type="search" list="stops" name="to" placeholder='Destino' className='bg-opacity-20 bg-slate-400 pr-24 pl-6 py-3 rounded-md border-none backdrop-blur-xl placeholder-slate-200 placeholder:font-extrabold font-bold' ref={toRef} onChange={handle_to} />
           </div>
           <datalist id="stops">
             {stops.map((stop, i) => <option key={i} value={stop.name} />)}

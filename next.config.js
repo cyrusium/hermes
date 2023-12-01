@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // output: "export",
   reactStrictMode: true,
   compress: true,
   poweredByHeader: false,
@@ -14,21 +14,11 @@ const nextConfig = {
   trailingSlash: false,
   skipTrailingSlashRedirect: true,
   experimental: {
-    appDir: true,
     gzipSize: true,
     optimizeCss: true,
     swcMinify: true,
-    deploymentId: "v1",
+    // deploymentId: "v1",
   },
 };
-
-if (process.argv.includes("--turbo")) {
-  console.warn("Turbo mode enabled, disabling incompatible options");
-  delete nextConfig?.crossOrigin;
-  delete nextConfig?.skipTrailingSlashRedirect;
-  delete nextConfig?.experimental?.optimizeCss;
-  delete nextConfig?.experimental?.swcMinify;
-  delete nextConfig?.experimental?.deploymentId;
-}
 
 module.exports = nextConfig;
